@@ -6,6 +6,9 @@
 
 /** common style **/
 
+.btn{
+    border-radius: 0px;
+}
 .navbar-default {
     border: none;
     background-color: transparent;

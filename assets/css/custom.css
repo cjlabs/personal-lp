@@ -16,5 +16,19 @@ body{
 background colors 
 **/
 .bg-gray{
-   background:  #ECECEC;
+    background:  #ECECEC;
+}
+
+
+
+/** filterring image **/
+
+.filter-sepia {
+
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+.filter-dark{
+    
 }
