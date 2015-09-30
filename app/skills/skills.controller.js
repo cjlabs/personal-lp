@@ -7,7 +7,7 @@
     SkillsController.$inject = ['$scope'];
 
     function SkillsController($scope) {
-        $scope.show ='wordpress';
+        $scope.show ='webdev';
         $scope.displayDetailSkill = function (skillVal) {
            $scope.show =skillVal;
         }

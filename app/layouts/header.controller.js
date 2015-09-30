@@ -1,12 +1,12 @@
 // dashboard.js
-(function() {
+(function () {
     'use strict';
-angular
-    .module('cjlabsApp')
-    .controller('HeaderController', HeaderController);
+    angular
+            .module('cjlabsApp')
+            .controller('HeaderController', HeaderController);
 
-function HeaderController() {
-	alert('testing header here');
-}
+    function HeaderController() {
+        alert('testing header here');
+    }
 
 })();

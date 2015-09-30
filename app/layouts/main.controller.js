@@ -1,15 +1,15 @@
 // dashboard.js
-(function() {
+(function () {
     'use strict';
-angular.module('cjlabsApp')
-    .controller('MainController', MainController);
+    angular.module('cjlabsApp')
+            .controller('MainController', MainController);
 
-      MainController.$inject = ['$scope'];
+    MainController.$inject = ['$scope'];
 
-function MainController($scope) {
-	$scope.displayDetail = function(){
-		alert('display detail is executer');
-	}
-}
+    function MainController($scope) {
+        $scope.displayDetail = function () {
+            alert('display detail is executer');
+        }
+    }
 
 })();
