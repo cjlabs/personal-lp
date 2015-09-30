@@ -1,0 +1,13 @@
+/** plugins **/
+@import  "assets/css/bootstrap.min.css";
+@import  "assets/css/animate.min.css";
+@import  "assets/libs/font-awesome/css/font-awesome.min.css";
+
+/** custom **/
+@import  "assets/css/creative.css";
+@import  "assets/css/custom.css";
+
+
+/** fonts **/
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
+@import "http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic";
