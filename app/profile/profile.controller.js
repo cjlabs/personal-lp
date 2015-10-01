@@ -7,7 +7,7 @@
     ProfileController.$inject = ['$scope'];
 
     function ProfileController($scope) {
-        $scope.show = 'about';
+        $scope.show = null;
         $scope.mainProfile = 1;
         $scope.displayDetail = function (detailVal) {
             $scope.show = detailVal;

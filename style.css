@@ -3,6 +3,10 @@
 @import  "assets/css/animate.min.css";
 @import  "assets/libs/font-awesome/css/font-awesome.min.css";
 @import  "assets/css/animate.min.css";
+@import  "assets/libs/owl-carousel/owl.carousel.css";
+@import  "assets/libs/owl-carousel/owl.transitions.css";
+@import  "assets/libs/owl-carousel/owl.theme.css";
+
 
 /** custom **/
 @import  "assets/css/creative.css";
