@@ -1,0 +1,57 @@
+
+/* BASE STYLES
+============================================================================= */
+
+.page        { 
+    bottom:0; 
+    padding-top:200px;
+    position:absolute; 
+    text-align:center;
+    top:0;  
+    width:100%; 
+}
+
+.page h1    { font-size:60px; }
+.page a     { margin-top:50px; }
+#about      { color:#333; position:absolute; text-align:center; top:50px; width:100%; }
+
+/* PAGES
+============================================================================= */
+.page-home      { background:#00D0BC; color:#00907c; }
+.page-about     { background:#E59400; color:#a55400; }
+.page-contact   { background:#ffa6bb; color:#9e0000; }
+
+/* ANIMATIONS
+============================================================================= */
+
+.page.ng-leave  { z-index:9999; }
+.page.ng-enter  { z-index:8888; }
+
+/* page specific animations ------------------------ */
+
+
+/* contact ---------------------- */
+.profile-detail.ng-leave      {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: rotateOutNewspaper .5s both ease-in;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation: rotateOutNewspaper .5s both ease-in;
+    transform-origin: 50% 50%;
+    animation: rotateOutNewspaper .5s both ease-in;
+}
+.profile-detail.ng-enter      { 
+    -webkit-animation:hinge 0.6s both ease-out;
+    -moz-animation:hinge 0.6s both ease-out;
+    animation:hinge 0.6s both ease-out;  
+}
+
+.main-profile.ng-hide-add,  .main-profile.ng-hide-remove    {
+    -webkit-animation: slideInUp .5s both ease-in;
+    -moz-animation: slideInUp .5s both ease-in;
+    animation: slideInUp .5s both ease-in;
+}
+.main-profile.ng-show      { 
+    -webkit-animation:slideInRight 0.3s both ease-in;
+    -moz-animation:slideInRight 0.3s both ease-in;
+    animation:slideInRight 0.5s both ease-in;  
+}

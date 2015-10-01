@@ -1,0 +1,34 @@
+<div ng-controller="ProfileController">
+    <div class="container main-profile" id="header" ng-show="mainProfile">
+        <div class="filter-dark "  >
+            <div class="header-content no-padding">
+                <div class="header-content-inner">
+                    <h4><b>[ WEB DEVELOPER - WEB DESIGNER - WEB TRAINER - GRAPHIC DESIGNER ]</b></h4>
+                    <h1 id="name">PUTERA KAHFI</h1>
+                    <h5> <em>Sometimes you win, sometimes you learn</em></h5>
+                    <hr class="no-padding">
+
+                    <i class="fa fa-3x fa-github-square"></i>&nbsp;  
+                    <i class="fa fa-3x fa-facebook-square"></i>&nbsp;
+                    <i class="fa fa-3x fa-linkedin-square"></i>&nbsp;  
+
+                    <br/> <br/>
+
+                    <a href="#about" class="btn btn-primary btn-md page-scroll"><i class="fa fa-eye"></i> view resume</a>
+                    <a href="#about" class="btn btn-primary btn-md page-scroll" ng-click="displayDetail('about')"><i class="fa fa-eye"></i> more about me</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-switch on="show">
+
+        <div class="profile-detail"  ng-switch-when="about">
+            <div ng-include="'app/profile/about.html'"></div>
+        </div>
+
+    </div>
+
+</div>
