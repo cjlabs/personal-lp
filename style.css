@@ -2,6 +2,7 @@
 @import  "assets/css/bootstrap.min.css";
 @import  "assets/css/animate.min.css";
 @import  "assets/libs/font-awesome/css/font-awesome.min.css";
+@import  "assets/css/animate.min.css";
 
 /** custom **/
 @import  "assets/css/creative.css";
@@ -13,4 +14,12 @@
 @import "http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic";
 
 /** theme **/
-@import "assets/css/themes/light.css";
+@import "assets/css/themes/dark.css";
+
+/** partials css **/
+@import "app/profile/profile.css";
+
+
+/** angular animations **/
+@import "app/profile/profile.animate.css";
+@import "app/skills/skills.animate.css";

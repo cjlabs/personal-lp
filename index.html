@@ -73,74 +73,36 @@
         </nav>
 
 
-
-        <header class="filter-dark">
-            <div class="header-content no-padding">
-                <div class="header-content-inner">
-                    <h4><b>[ WEB DEVELOPER - WEB DESIGNER - WEB TRAINER - GRAPHIC DESIGNER ]</b></h4>
-                    <h1 id="name" ng-click="displayDetail()">PUTERA KAHFI</h1>
-                    <h5> <em>Sometimes you win, sometimes you learn</em></h5>
-                    <hr class="no-padding">
-
-                    <i class="fa fa-3x fa-github-square"></i>&nbsp;  
-                    <i class="fa fa-3x fa-facebook-square"></i>&nbsp;
-                    <i class="fa fa-3x fa-linkedin-square"></i>&nbsp;  
-
-                    <br/> <br/>
-
-                    <a href="#about" class="btn btn-primary btn-md page-scroll"><i class="fa fa-eye"></i> view resume</a>
-
-                </div>
-            </div>
-        </header>
-
         <div ng-include="'app/layouts/main.html'"></div>
 
 
         <!-- jQuery -->
-        <script src="assets/libs/jquery.js"></script>
+        <script src="assets/libs/jquery-2.1.4.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="assets/libs/bootstrap.min.js"></script>
 
         <!-- Plugin JavaScript -->
         <script src="assets/libs/jquery.easing.min.js"></script>
-        <script src="assets/libs/angular.min.js"></script>
-        <script src="assets/libs/ui-bootstrap-0.13.4.min.js"></script>
-        <script src="assets/libs/angular-animate.min.js"></script>
-
         <script src="assets/libs/jquery.fittext.js"></script>
         <script src="assets/libs/wow.min.js"></script>
 
         <!--- angular  -->
+        <script src="assets/libs/angular.min.js"></script>
+        <script src="assets/libs/ui-bootstrap-0.13.4.min.js"></script>
+        <script src="assets/libs/angular-animate.min.js"></script>
+        <script src="assets/libs/angular-ui-router.min.js"></script>
         <script src="app/app.module.js"></script>
         <script src="app/layouts/main.controller.js"></script>
         <script src="app/skills/skills.controller.js"></script>
+        <script src="app/profile/profile.controller.js"></script>
+
+
 
 
         <!-- Custom Theme JavaScript -->
         <script src="assets/libs/creative.js"></script>
 
-
-
-        <script>
-
-            $(function () {
-                $.fn.slideFadeToggle = function (speed, easing, callback) {
-                    return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
-                };
-            });
-
-            $(function () {
-                $("#skills").on('click', function () {
-                    alert('testing');
-                    $(this).slideFadeToggle();
-                });
-
-
-            });
-
-        </script>
 
     </body>
 

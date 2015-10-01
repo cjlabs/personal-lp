@@ -1,5 +1,5 @@
 
-<div ng-controller="SkillsController">
+<div ng-controller="SkillsController" class="bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -8,30 +8,26 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
+    <div class="container text-center">
+        <div class="row ">
+            <div class="col-lg-1 col-md-6 text-center col-md-offset-4">
                 <div class="service-box" ng-click="displayDetailSkill('webdev')">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Web Development</h3>
+                    <i class="fa fa-4x fa-diamond wow bounceIn"></i>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-1 col-md-6 text-center">
                 <div class="service-box" ng-click="displayDetailSkill('wordpress')">
-                    <i class="fa fa-4x fa-wordpress wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Wordpress</h3>
+                    <i class="fa fa-4x fa-wordpress wow bounceIn" data-wow-delay=".1s"></i>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-1 col-md-6 text-center">
                 <div class="service-box" ng-click="displayDetailSkill('frontend')">
-                    <i class ="fa fa-4x fa-html5 wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Front End Devs</h3>
+                    <i class ="fa fa-4x fa-html5 wow bounceIn" data-wow-delay=".2s"></i>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-1 col-md-6 text-center">
                 <div class="service-box" ng-click="displayDetailSkill('php')">
-                    <i class="fa fa-4x fa-image bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Php Framework</h3>
+                    <i class="fa fa-4x fa-image bounceIn" data-wow-delay=".3s"></i>
                 </div>
             </div>
 
@@ -39,28 +35,28 @@
     </div>
 
 
-    <div id="detail-skill"  class="animate-switch-container" ng-switch on="show">
+    <div id="detail-skill"  ng-switch on="show" class="bg-primary">
 
-        <div class="container">
-            <div ng-animate="animate" class="sheetform-row" class="animate-switch" ng-switch-when="wordpress">
+        <div class="container"  >
+            <div  ng-switch-when="wordpress">
                 <div class="sheetform-left-col fl-left"><label for="sheetform-price">Wordpress</label></div>
                 <div class="sheetform-midlle-col fl-left"><input type="text" class="sheetform-input" id="sheetform-price" name="price" ng-model="price" /></div>
                 <div class="sheetform-right-col fl-right"></div>
             </div>
 
-            <div ng-animate="animate" class="sheetform-row" class="animate-switch" ng-switch-when="php">
+            <div  ng-switch-when="php">
                 <div class="sheetform-left-col fl-left"><label for="sheetform-price">PHP</label></div>
                 <div class="sheetform-midlle-col fl-left"><input type="text" class="sheetform-input" id="sheetform-price" name="price" ng-model="price" /></div>
                 <div class="sheetform-right-col fl-right"></div>
             </div>
 
-            <div ng-animate="animate" class="sheetform-row" class="animate-switch" ng-switch-when="webdev">
+            <div  ng-switch-when="webdev">
                 <div class="sheetform-left-col fl-left"><label for="sheetform-price">Webdev</label></div>
                 <div class="sheetform-midlle-col fl-left"><input type="text" class="sheetform-input" id="sheetform-price" name="price" ng-model="price" /></div>
                 <div class="sheetform-right-col fl-right"></div>
             </div>
 
-            <div ng-animate="animate" class="sheetform-row" class="animate-switch" ng-switch-when="frontend">
+            <div ng-switch-when="frontend">
                 <div class="sheetform-left-col fl-left"><label for="sheetform-price">Front end</label></div>
                 <div class="sheetform-midlle-col fl-left"><input type="text" class="sheetform-input" id="sheetform-price" name="price" ng-model="price" /></div>
                 <div class="sheetform-right-col fl-right"></div>
