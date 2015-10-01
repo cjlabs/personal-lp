@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 1, 2015, 6:05:29 PM
+    Author     : putera kahfi 
+*/
+
+.animate-slide.ng-leave {
+    -webkit-animation: slideInRight 1s;
+    -moz-animation: slideInRight 1s ;
+    animation: slideInRight 1s ;
+}
+
+.animate-slide.ng-enter{ 
+    -webkit-animation:slideInLeft 1s ;
+    -moz-animation:slideInLeft 1s ;
+    animation:slideInLeft 1s;  
+}
