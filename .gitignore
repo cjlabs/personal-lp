@@ -1,2 +1,4 @@
 /nbproject/private/
+/nbproject/*
 /assets/libs/*/*
+/node_modules/*
