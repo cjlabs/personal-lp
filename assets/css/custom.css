@@ -44,3 +44,82 @@
     width: 100%;
     height: auto;
 }
+
+
+
+.bg-blue{
+    background: #05C1FD
+}
+
+
+/** chart **/
+.chart-horiz .chart li .bar {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    min-width: 164px;
+}
+
+.chart-horiz .chart {
+    width: 85%;
+    padding: 0;
+}
+.chart-horiz .chart li {
+    display: block;
+    height: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+.chart-horiz .chart li:before {
+    color: #fff;
+    content: attr(title);
+    left: 15px;
+    position: absolute;
+    top: 5px;
+}
+.chart-horiz .chart li.title:before {
+    color: black;
+    font-weight: bold;
+    left: 0
+}
+.chart-horiz .chart li:first-child {
+    margin-top: 0
+}
+.chart-horiz .chart li .bar {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    min-width: 164px
+}
+.chart-horiz .chart li .number {
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 10px;
+    position: absolute;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 0px solid;
+    height: 40px;
+    line-height: 40px;
+}
+.chart-horiz .chart li.past .bar {
+    background: rgba(0, 0, 0, 0.4);
+}
+.chart-horiz .chart li.past .number {
+    color: #333;
+}
+
+
+/** github activity custom **/
+.github-activity *{
+    color: white;
+}
+
+
+/** profile custom **/
+.main-profile a{
+    color: #fff;
+}
+
+.main-profile a:hover{
+    text-decoration: none;
+}
