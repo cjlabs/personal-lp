@@ -1,9 +1,10 @@
 
-<div ng-controller="SkillsController" class="bg-dark">
+<div ng-controller="SkillsController">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading" id="skills" >SKILLS</h2>
+                <hr class="light">
             </div>
         </div>
     </div>
@@ -11,22 +12,22 @@
         <div class="row ">
             <div class="col-lg-1 col-md-6 text-center col-md-offset-4">
                 <div val="0" class="service-box btn btn-sm" >
-                    <i class="fa fa-4x fa-diamond wow bounceIn"></i>
+                    <i class="fa fa-4x fa-diamond wow bounceIn"></i><h6><b>Design</b></h6>
                 </div>
             </div>
             <div class="col-lg-1 col-md-6 text-center">
                 <div val="1"  class="service-box btn btn-sm">
-                    <i class="fa fa-4x fa-wordpress wow bounceIn" data-wow-delay=".1s"></i>
+                    <i class="fa fa-4x fa-wordpress wow bounceIn" data-wow-delay=".1s"></i><h6><b>Wordpress</b>
                 </div>
             </div>
             <div class="col-lg-1 col-md-6 text-center">
                 <div val="2"  class="service-box btn btn-sm">
-                    <i class ="fa fa-4x fa-html5 wow bounceIn" data-wow-delay=".2s"></i>
+                    <i class ="fa fa-4x fa-html5 wow bounceIn" data-wow-delay=".2s"></i><h6><b>FrontEnd</b>
                 </div>
             </div>
             <div class="col-lg-1 col-md-6 text-center">
                 <div val="3" class="service-box btn btn-sm" >
-                    <i class="fa fa-4x fa-image bounceIn" data-wow-delay=".3s"></i>
+                    <i class="fa fa-4x fa-diamond bounceIn" data-wow-delay=".3s"></i><h6><b>Php Framework</b>
                 </div>
             </div>
 
@@ -35,14 +36,16 @@
 
 
 
-    <div class="bg-dark no-padding">
+    <div class="bg-primary no-padding bg-ray">
+        <div class="ray1"></div>
+        <div class="ray2"></div>
+
         <div id="owl-demo" class="owl-carousel owl-theme">
 
-            <div class="item" ng-include="'app/skills/webdev.html'"></div>
-            <div class="item" ng-include="'app/skills/webdev.html'"></div>
-            <div class="item" ng-include="'app/skills/webdev.html'"></div>
-            <div class="item" ng-include="'app/skills/webdev.html'"></div>
-            <div class="item" ng-include="'app/skills/webdev.html'"></div>
+            <div class="item" ng-include="'app/skills/design.html'"></div>
+            <div class="item" ng-include="'app/skills/wordpress.html'"></div>
+            <div class="item" ng-include="'app/skills/frontend.html'"></div>
+            <div class="item" ng-include="'app/skills/php.html'"></div>
 
         </div>
     </div>
