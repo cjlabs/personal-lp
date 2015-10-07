@@ -138,3 +138,8 @@
 .skill-nav .btn:active{
     border-radius: none;
 }
+
+
+.wagwep-container ul#portfolio-filter {
+    border-bottom: 1px dotted #424242;
+}
