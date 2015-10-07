@@ -123,3 +123,18 @@
 .main-profile a:hover{
     text-decoration: none;
 }
+
+
+
+/** skill nav **/
+.skill-nav .btn{
+     border: 0;
+    border-radius: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+.skill-nav .btn:active{
+    border-radius: none;
+}

@@ -7,3 +7,12 @@
     </div>
 
 </div>
+
+<script>
+
+    $(".rating").raty({
+        score: function () {
+            return $(this).attr('data-score');
+        }
+    });
+</script>

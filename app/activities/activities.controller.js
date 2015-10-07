@@ -2,14 +2,24 @@
 (function () {
     'use strict';
     angular.module('cjlabsApp')
-            .controller('AwardsController', AwardsController);
+            .controller('ActivitiesController', ActivitiesController);
 
-    AwardsController.$inject = ['$scope'];
+    ActivitiesController.$inject = ['$scope', 'GithubActivityService'];
 
-    function AwardsController($scope) {
-        $scope.show = 'webdev';
-        $scope.displayDetailAward = function (skillVal) {
-            $scope.show = skillVal;
+    function ActivitiesController($scope, GithubActivityService) {
+ 
+        GithubActivityService.events({
+            user: 'puterakahfi',
+            params: {
+                callback: 'JSON_CALLBACK',
+                access_token: '23b691e2885a5eb404ce13dcf3f7fccc2b1744f6'
+            }
+        }).get().$promise.then(function (events) {
+            $scope.activity = events.data;
+        });
+
+        $scope.config = {
+            limit: 3
         }
     }
 

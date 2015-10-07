@@ -26,7 +26,8 @@
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
     "time-grunt": "^0.3.1",
-    "intern": "~3.0.6"
+    "intern": "~3.0.6",
+    "cucumber":"latest"
   },
   "engines": {
     "node": ">=0.10.0"
