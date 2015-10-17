@@ -5,7 +5,7 @@
  */
 
 
-function Ux() {
+ function Ux() {
     this.clickName = function() {
         nameId = "#name";
         $(nameId).on('click', function() {
@@ -22,3 +22,29 @@ Ux.init = function() {
     uxObj = new Ux();
     uxObj.clickName();
 }
+
+
+
+
+$(function () {
+
+    var owl = $("#owl-demo");
+
+    owl.owlCarousel({
+        navigation: false,
+        singleItem: true,
+        pagination: false,
+        transitionStyle: "backSlide"
+    });
+
+
+    var owl = $("#owl-demo").data('owlCarousel');
+
+
+    $(".service-box").on('click', function () {
+        x = $(this).attr('val');
+        owl.goTo(x);
+
+    });
+
+});
