@@ -1,0 +1,24 @@
+/*
+    light theme
+    Created on : Sep 30, 2015, 5:39:11 PM
+    Author     : dev
+*/
+
+/** common style **/
+
+.btn{
+    border-radius: 0px;
+}
+.navbar-default {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-default .nav > li>a, .navbar-default .nav>li>a:focus {
+    color: rgba(255,255,255,.7);
+}
+
+.bg-dark{
+    background: #05C1FD
+}
